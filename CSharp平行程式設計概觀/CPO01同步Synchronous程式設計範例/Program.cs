@@ -20,6 +20,7 @@ namespace CPO01同步Synchronous程式設計範例
             stopwatch.Start();
             // 找出所有的質數
             var allPrimes = ComputeAllPrimeNumbers(2, lastNumber);
+            stopwatch.Stop();
             Console.WriteLine("Primes : {0}\nTime: {1}", allPrimes.Count, stopwatch.ElapsedMilliseconds);
         }
 
