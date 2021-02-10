@@ -5,10 +5,10 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 
-namespace CPO03切割成為多區塊的非同步ansynchronous程式設計範例
+namespace CPO03切割成為多區塊的平行Parallelism非同步ansynchronous程式設計範例
 {
     /// <summary>
-    /// 說明 ： 使用非同步 asynchronous 方式分批計算不同區間的所有質數數量
+    /// 說明 ： 使用平行Parallelism非同步 asynchronous 方式分批計算不同區間的所有質數數量
     /// 備註 ： 開始執行前，請打開工作管理員，觀察處理器使用效能趨勢圖
     ///        透過執行緒功能，做到非同步 CPU Bound 集中的處理能力
     ///        使用 Release 方案組態來進行建置與執行
