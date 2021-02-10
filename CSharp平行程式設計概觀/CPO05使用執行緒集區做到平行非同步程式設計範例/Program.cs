@@ -50,7 +50,7 @@ namespace CPO05使用執行緒集區做到平行非同步程式設計範例
                 });
             }
 
-            EventWaitHandle.WaitAll(autoResetEvents.ToArray());
+            WaitHandle.WaitAll(autoResetEvents.ToArray());
             #endregion
 
             stopwatch.Stop();
