@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO03切割成為多區塊�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO05使用執行緒集區做到平行非同步程式設計範例", "CPO05使用執行緒集區做到平行非同步程式設計範例\CPO05使用執行緒集區做到平行非同步程式設計範例.csproj", "{DB814B54-80C5-430E-93FE-412B1723A66B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO06使用工作做到平行非同步程式設計範例", "CPO06使用工作做到平行非同步程式設計範例\CPO06使用工作做到平行非同步程式設計範例.csproj", "{573DD223-3C70-42A9-9728-BAEBAF709269}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{DB814B54-80C5-430E-93FE-412B1723A66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB814B54-80C5-430E-93FE-412B1723A66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB814B54-80C5-430E-93FE-412B1723A66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{573DD223-3C70-42A9-9728-BAEBAF709269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{573DD223-3C70-42A9-9728-BAEBAF709269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{573DD223-3C70-42A9-9728-BAEBAF709269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{573DD223-3C70-42A9-9728-BAEBAF709269}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

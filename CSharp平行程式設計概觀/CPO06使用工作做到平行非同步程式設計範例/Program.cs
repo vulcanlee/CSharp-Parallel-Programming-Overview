@@ -4,21 +4,20 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
+using System.Threading.Tasks;
 
-namespace CPO04並行Concurrency的非同步Ansynchronous程式設計範例
+namespace CPO06使用工作做到平行非同步程式設計範例
 {
     /// <summary>
-    /// 說明 ： 了解在 並行Concurrency 模式下進行使用非同步 asynchronous 方式分批計算不同區間的所有質數數量
+    /// 說明 ： 使用執行緒集區做到平行Parallelism非同步 asynchronous 方式分批計算不同區間的所有質數數量
     /// 備註 ： 開始執行前，請打開工作管理員，觀察處理器使用效能趨勢圖
-    ///        觀察當使用並行方式來執行非同步計算，效能與CPU使用率有何變化
+    ///        透過執行緒功能，做到非同步 CPU Bound 集中的處理能力
     ///        使用 Release 方案組態來進行建置與執行
     /// </summary>
     class Program
     {
         static void Main(string[] args)
         {
-            // 指定僅使用單一邏輯處理核心來執行
-            Process.GetCurrentProcess().ProcessorAffinity = (IntPtr)0b0010_0000;
             // 請根據本身電腦，調整成為適當的大小
             int lastNumber = 20000000;
             #region 計算切割成為 n 個資料區塊的開始與結束數值
@@ -39,19 +38,21 @@ namespace CPO04並行Concurrency的非同步Ansynchronous程式設計範例
             stopwatch.Start();
 
             #region 找出所有的質數
-            List<Thread> allThreads = new List<Thread>();
             ConcurrentBag<List<int>> allPrimes = new ConcurrentBag<List<int>>();
+            // 儲存所有非同步工作
+            List<Task> allTasks = new List<Task>();
             for (int i = 0; i < partition; i++)
             {
                 int idx = i;
-                allThreads.Add(new Thread(_ =>
+                allTasks.Add(Task.Run(() =>
                 {
                     allPrimes.Add(ComputeAllPrimeNumbers
                         (range[idx].begin, range[idx].end));
                 }));
             }
-            foreach (var thread in allThreads) { thread.Start(); }
-            foreach (var item in allThreads) { item.Join(); }
+
+            // 等候 所有非同步工作 完成
+            Task.WaitAll(allTasks.ToArray());
             #endregion
 
             stopwatch.Stop();

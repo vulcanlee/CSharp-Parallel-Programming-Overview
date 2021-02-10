@@ -7,7 +7,7 @@
 |CPO03|切割成為多區塊的平行Parallelism非同步Ansynchronous程式設計範例||
 |CPO04|並行Concurrency的非同步Ansynchronous程式設計範例||
 |CPO05|使用執行緒集區做到平行非同步程式設計範例||
-|CPO06|||
+|CPO06|使用工作做到平行非同步程式設計範例||
 |CPO07|||
 |CPO08|||
 |CPO09|||

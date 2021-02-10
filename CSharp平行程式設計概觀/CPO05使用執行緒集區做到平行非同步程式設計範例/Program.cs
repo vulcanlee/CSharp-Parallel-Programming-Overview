@@ -19,6 +19,7 @@ namespace CPO05使用執行緒集區做到平行非同步程式設計範例
         {
             // 請根據本身電腦，調整成為適當的大小
             int lastNumber = 20000000;
+            #region 計算切割成為 n 個資料區塊的開始與結束數值
             int partition = 4;
             int part = lastNumber / partition;
             List<(int begin, int end)> range = new List<(int begin, int end)>();
@@ -33,6 +34,7 @@ namespace CPO05使用執行緒集區做到平行非同步程式設計範例
                 range.Add((begin, end));
                 autoResetEvents.Add(new AutoResetEvent(false));
             }
+            #endregion
 
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
