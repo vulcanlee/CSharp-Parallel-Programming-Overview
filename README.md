@@ -4,8 +4,8 @@
 |-|-|-|
 |CPO01|同步Synchronous程式設計範例||
 |CPO02|切割成為多區塊的同步Synchronous程式設計範例||
-|CPO03|切割成為多區塊的非同步ansynchronous程式設計範例||
-|CPO04|||
+|CPO03|切割成為多區塊的非同步Ansynchronous程式設計範例||
+|CPO04|並行Concurrency的非同步Ansynchronous程式設計範例||
 |CPO05|||
 |CPO06|||
 |CPO07|||
