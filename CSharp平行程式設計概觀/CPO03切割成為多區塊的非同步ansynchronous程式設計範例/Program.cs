@@ -1,11 +1,14 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading;
 
-namespace CPO02切割成為多區塊的同步Synchronous程式設計範例
+namespace CPO03切割成為多區塊的非同步ansynchronous程式設計範例
 {
     /// <summary>
-    /// 說明 ： 使用同步 Synchronous 方式分批計算不同區間的所有質數數量
+    /// 說明 ： 使用非同步 asynchronous 方式分批計算不同區間的所有質數數量
     /// 備註 ： 開始執行前，請打開工作管理員，觀察處理器使用效能趨勢圖
     ///        透過執行緒功能，做到非同步 CPU Bound 集中的處理能力
     ///        使用 Release 方案組態來進行建置與執行
@@ -16,7 +19,6 @@ namespace CPO02切割成為多區塊的同步Synchronous程式設計範例
         {
             // 請根據本身電腦，調整成為適當的大小
             int lastNumber = 20000000;
-            #region 計算切割成為 n 個資料區塊的開始與結束數值
             int partition = 4;
             int part = lastNumber / partition;
             List<(int begin, int end)> range = new List<(int begin, int end)>();
@@ -28,32 +30,31 @@ namespace CPO02切割成為多區塊的同步Synchronous程式設計範例
                 if (i == partition) end = lastNumber;
                 range.Add((begin, end));
             }
-            #endregion
 
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
             #region 找出所有的質數
-            int idx = 0;
-            var allPrimes1 = ComputeAllPrimeNumbers
-                (range[idx].begin, range[idx].end);
-            idx++;
-            var allPrimes2 = ComputeAllPrimeNumbers
-                (range[idx].begin, range[idx].end);
-            idx++;
-            var allPrimes3 = ComputeAllPrimeNumbers
-                (range[idx].begin, range[idx].end);
-            idx++;
-            var allPrimes4 = ComputeAllPrimeNumbers
-                (range[idx].begin, range[idx].end);
+            List<Thread> allThreads = new List<Thread>();
+            ConcurrentBag<List<int>> allPrimes = new ConcurrentBag<List<int>>();
+            for (int i = 0; i < partition; i++)
+            {
+                int idx = i;
+                allThreads.Add(new Thread(_ =>
+                {
+                    allPrimes.Add(ComputeAllPrimeNumbers
+                        (range[idx].begin, range[idx].end));
+                }));
+            }
+            foreach (var thread in allThreads) { thread.Start(); }
+            foreach (var item in allThreads) { item.Join(); }
             #endregion
 
             stopwatch.Stop();
 
+            allPrimes.Sum(x => x.Count());
             Console.WriteLine("Primes : {0}\nTime: {1}",
-                allPrimes1.Count + allPrimes2.Count +
-                allPrimes3.Count + allPrimes4.Count,
-                stopwatch.ElapsedMilliseconds);
+                allPrimes.Sum(x => x.Count()), stopwatch.ElapsedMilliseconds);
         }
 
         #region 找出兩數值間的所有質數

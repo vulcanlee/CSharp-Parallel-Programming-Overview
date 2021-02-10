@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO01同步Synchronous程式設計範例", "CPO01同步Synchronous程式設計範例\CPO01同步Synchronous程式設計範例.csproj", "{C412D418-22DD-4885-A11C-2280FC38FAE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO02切割成為多區塊的同步Synchronous程式設計範例", "CPO02切割成為多區塊的同步Synchronous程式設計範例\CPO02切割成為多區塊的同步Synchronous程式設計範例.csproj", "{AAE863CB-08FB-4F92-82B6-4084AB78C7AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO02切割成為多區塊的同步Synchronous程式設計範例", "CPO02切割成為多區塊的同步Synchronous程式設計範例\CPO02切割成為多區塊的同步Synchronous程式設計範例.csproj", "{AAE863CB-08FB-4F92-82B6-4084AB78C7AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO03切割成為多區塊的非同步ansynchronous程式設計範例", "CPO03切割成為多區塊的非同步ansynchronous程式設計範例\CPO03切割成為多區塊的非同步ansynchronous程式設計範例.csproj", "{59D22FA3-5C17-4FEC-BA09-D3E46E42D46E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AAE863CB-08FB-4F92-82B6-4084AB78C7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAE863CB-08FB-4F92-82B6-4084AB78C7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAE863CB-08FB-4F92-82B6-4084AB78C7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59D22FA3-5C17-4FEC-BA09-D3E46E42D46E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59D22FA3-5C17-4FEC-BA09-D3E46E42D46E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59D22FA3-5C17-4FEC-BA09-D3E46E42D46E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59D22FA3-5C17-4FEC-BA09-D3E46E42D46E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
