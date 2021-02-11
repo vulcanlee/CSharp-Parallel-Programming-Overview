@@ -12,8 +12,12 @@
 |CPO08|使用EAP進行非同步Asynchronous程式設計範例||
 |CPO09|使用TAP進行非同步Asynchronous程式設計範例||
 |CPO10|使用同步程式設計方式來設計非同步應用需求||
-|CPO11|||
-|CPO12|||
+|CPO11|你已經孰悉Timer非同步程式設計範例||
+|CPO12|你已經孰悉BackgroundWorker非同步程式設計範例||
+|CPO13|||
+|CPO14|||
+|CPO15|||
+|CPO16|||
 ||||
 ||||
 |-|-|-|
