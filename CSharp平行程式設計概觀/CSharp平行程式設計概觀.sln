@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO06使用工作做到平�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO07使用APM進行非同步Asynchronous程式設計範例", "CPO07使用APM進行非同步Asynchronous程式設計範例\CPO07使用APM進行非同步Asynchronous程式設計範例.csproj", "{A357D916-18FC-4FCA-B3EB-11A19A711490}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO08使用EAP進行非同步Asynchronous程式設計範例", "CPO08使用EAP進行非同步Asynchronous程式設計範例\CPO08使用EAP進行非同步Asynchronous程式設計範例.csproj", "{F0AAD77C-D4CC-4D9C-964D-4004D5D93B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO09使用TAP進行非同步Asynchronous程式設計範例", "CPO09使用TAP進行非同步Asynchronous程式設計範例\CPO09使用TAP進行非同步Asynchronous程式設計範例.csproj", "{EE8EE0D1-137C-4B81-9F68-9F3182272790}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{A357D916-18FC-4FCA-B3EB-11A19A711490}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A357D916-18FC-4FCA-B3EB-11A19A711490}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A357D916-18FC-4FCA-B3EB-11A19A711490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0AAD77C-D4CC-4D9C-964D-4004D5D93B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0AAD77C-D4CC-4D9C-964D-4004D5D93B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0AAD77C-D4CC-4D9C-964D-4004D5D93B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0AAD77C-D4CC-4D9C-964D-4004D5D93B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE8EE0D1-137C-4B81-9F68-9F3182272790}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE8EE0D1-137C-4B81-9F68-9F3182272790}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE8EE0D1-137C-4B81-9F68-9F3182272790}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE8EE0D1-137C-4B81-9F68-9F3182272790}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

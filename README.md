@@ -9,8 +9,8 @@
 |CPO05|使用執行緒集區做到平行非同步程式設計範例||
 |CPO06|使用工作做到平行非同步程式設計範例||
 |CPO07|使用APM進行非同步Asynchronous程式設計範例||
-|CPO08|||
-|CPO09|||
+|CPO08|使用EAP進行非同步Asynchronous程式設計範例||
+|CPO09|使用TAP進行非同步Asynchronous程式設計範例||
 |CPO10|||
 |CPO11|||
 |CPO12|||

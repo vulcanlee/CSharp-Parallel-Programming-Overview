@@ -18,7 +18,7 @@ namespace CPO07使用APM進行非同步Asynchronous程式設計範例
             HttpWebRequest myHttpWebRequest = (HttpWebRequest)WebRequest
                 .Create("http://www.google.com");
 
-            #region 使用 callback 方式來取得非同步結果
+            #region 使用 callback 方式來取得非同步結果(BeginGetResponse 開始啟動非同步作業)
             // 若將 myHttpWebRequest 引數設定為 null來傳進方法內，會發生甚麼問題呢？
             IAsyncResult result =
               (IAsyncResult)myHttpWebRequest
