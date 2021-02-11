@@ -15,15 +15,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO05使用執行緒集區�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO06使用工作做到平行非同步程式設計範例", "CPO06使用工作做到平行非同步程式設計範例\CPO06使用工作做到平行非同步程式設計範例.csproj", "{573DD223-3C70-42A9-9728-BAEBAF709269}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO07使用APM進行非同步Asynchronous程式設計範例", "CPO07使用APM進行非同步Asynchronous程式設計範例\CPO07使用APM進行非同步Asynchronous程式設計範例.csproj", "{A357D916-18FC-4FCA-B3EB-11A19A711490}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO07使用APM進行非同步Asynchronous程式設計範例", "CPO07使用APM進行非同步Asynchronous程式設計範例\CPO07使用APM進行非同步Asynchronous程式設計範例.csproj", "{A357D916-18FC-4FCA-B3EB-11A19A711490}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO08使用EAP進行非同步Asynchronous程式設計範例", "CPO08使用EAP進行非同步Asynchronous程式設計範例\CPO08使用EAP進行非同步Asynchronous程式設計範例.csproj", "{F0AAD77C-D4CC-4D9C-964D-4004D5D93B99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO08使用EAP進行非同步Asynchronous程式設計範例", "CPO08使用EAP進行非同步Asynchronous程式設計範例\CPO08使用EAP進行非同步Asynchronous程式設計範例.csproj", "{F0AAD77C-D4CC-4D9C-964D-4004D5D93B99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO09使用TAP進行非同步Asynchronous程式設計範例", "CPO09使用TAP進行非同步Asynchronous程式設計範例\CPO09使用TAP進行非同步Asynchronous程式設計範例.csproj", "{EE8EE0D1-137C-4B81-9F68-9F3182272790}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO09使用TAP進行非同步Asynchronous程式設計範例", "CPO09使用TAP進行非同步Asynchronous程式設計範例\CPO09使用TAP進行非同步Asynchronous程式設計範例.csproj", "{EE8EE0D1-137C-4B81-9F68-9F3182272790}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO10使用同步程式設計方式來設計非同步應用需求", "CPO10使用同步程式設計方式來設計非同步應用需求\CPO10使用同步程式設計方式來設計非同步應用需求.csproj", "{C8FC8A11-84A1-4EC8-BAFD-4F6A36030AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO10使用同步程式設計方式來設計非同步應用需求", "CPO10使用同步程式設計方式來設計非同步應用需求\CPO10使用同步程式設計方式來設計非同步應用需求.csproj", "{C8FC8A11-84A1-4EC8-BAFD-4F6A36030AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO12你已經孰悉BackgroundWorker非同步程式設計範例", "CPO12你已經孰悉BackgroundWorker非同步程式設計範例\CPO12你已經孰悉BackgroundWorker非同步程式設計範例.csproj", "{B06DA79A-4267-44FB-9278-74398C59CA1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO12你已經孰悉BackgroundWorker非同步程式設計範例", "CPO12你已經孰悉BackgroundWorker非同步程式設計範例\CPO12你已經孰悉BackgroundWorker非同步程式設計範例.csproj", "{B06DA79A-4267-44FB-9278-74398C59CA1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO13使用資料平行處理程式設計範例", "CPO13使用資料平行處理程式設計範例\CPO13使用資料平行處理程式設計範例.csproj", "{C9026B49-E170-44DB-9FEC-D7C705423ED0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO14使用平行查詢程式設計範例", "CPO14使用平行查詢程式設計範例\CPO14使用平行查詢程式設計範例.csproj", "{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{B06DA79A-4267-44FB-9278-74398C59CA1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B06DA79A-4267-44FB-9278-74398C59CA1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B06DA79A-4267-44FB-9278-74398C59CA1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9026B49-E170-44DB-9FEC-D7C705423ED0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9026B49-E170-44DB-9FEC-D7C705423ED0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9026B49-E170-44DB-9FEC-D7C705423ED0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9026B49-E170-44DB-9FEC-D7C705423ED0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
