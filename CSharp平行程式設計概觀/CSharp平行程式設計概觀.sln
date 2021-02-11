@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO13使用資料平行處�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO14使用平行查詢程式設計範例", "CPO14使用平行查詢程式設計範例\CPO14使用平行查詢程式設計範例.csproj", "{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO11你已經孰悉Timer非同步程式設計範例", "CPO11你已經孰悉Timer非同步程式設計範例\CPO11你已經孰悉Timer非同步程式設計範例.csproj", "{D7579E08-D5D6-47C6-BBB1-6ACE4B334A2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8964F4D8-BDD1-4B0A-B0E6-7C2A4DC31FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7579E08-D5D6-47C6-BBB1-6ACE4B334A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7579E08-D5D6-47C6-BBB1-6ACE4B334A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7579E08-D5D6-47C6-BBB1-6ACE4B334A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7579E08-D5D6-47C6-BBB1-6ACE4B334A2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
