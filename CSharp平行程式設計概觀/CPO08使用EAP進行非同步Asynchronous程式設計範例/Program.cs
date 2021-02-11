@@ -4,7 +4,7 @@ using System.Net;
 namespace CPO08使用EAP進行非同步Asynchronous程式設計範例
 {
     /// <summary>
-    /// 說明 ： 使用EAP進行非同步Asynchronous網頁內容取得計算
+    /// 說明 ： 使用EAP Event-based Asynchronous Pattern 進行非同步Asynchronous網頁內容取得計算
     /// 備註 ： 這是從 .NET Framework 2.0 開始使用的非同步API設計方式
     ///        透過 綁定 Callback 委派方法 來進行各種非同步操作
     /// </summary>

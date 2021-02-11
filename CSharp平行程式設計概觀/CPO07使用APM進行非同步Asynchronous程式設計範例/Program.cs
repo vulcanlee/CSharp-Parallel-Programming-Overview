@@ -6,7 +6,7 @@ using System.Text;
 namespace CPO07使用APM進行非同步Asynchronous程式設計範例
 {
     /// <summary>
-    /// 說明 ： 使用APM進行非同步Asynchronous網頁內容取得計算
+    /// 說明 ： 使用APM Asynchronous Programming Model 進行非同步網頁內容取得計算
     /// 備註 ： 這是最早期的非同步API設計方式
     ///        透過 IAsyncResult 來進行各種非同步操作
     /// </summary>

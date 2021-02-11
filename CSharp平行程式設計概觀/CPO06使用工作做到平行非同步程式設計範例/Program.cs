@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CPO06使用工作做到平行非同步程式設計範例
 {
     /// <summary>
-    /// 說明 ： 使用執行緒集區做到平行Parallelism非同步 asynchronous 方式分批計算不同區間的所有質數數量
+    /// 說明 ： 使用工作 Task 做到平行Parallelism非同步 asynchronous 方式分批計算不同區間的所有質數數量
     /// 備註 ： 開始執行前，請打開工作管理員，觀察處理器使用效能趨勢圖
     ///        透過執行緒功能，做到非同步 CPU Bound 集中的處理能力
     ///        使用 Release 方案組態來進行建置與執行
