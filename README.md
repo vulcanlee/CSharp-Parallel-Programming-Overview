@@ -11,7 +11,7 @@
 |CPO07|使用APM進行非同步Asynchronous程式設計範例||
 |CPO08|使用EAP進行非同步Asynchronous程式設計範例||
 |CPO09|使用TAP進行非同步Asynchronous程式設計範例||
-|CPO10|||
+|CPO10|使用同步程式設計方式來設計非同步應用需求||
 |CPO11|||
 |CPO12|||
 ||||
