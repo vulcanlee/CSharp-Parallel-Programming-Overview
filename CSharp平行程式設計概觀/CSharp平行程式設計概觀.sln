@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO11你已經孰悉Timer�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO15用委派以非同步的方式呼叫同步方法", "CPO15用委派以非同步的方式呼叫同步方法\CPO15用委派以非同步的方式呼叫同步方法.csproj", "{DEC9DEEE-14C4-4610-A406-801904A109B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO16用委派以非同步方式計算所有質數程式設計範例", "CPO16用委派以非同步方式計算所有質數程式設計範例\CPO16用委派以非同步方式計算所有質數程式設計範例.csproj", "{DFD28D97-C6C8-4F48-B327-51776C07AEBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{DEC9DEEE-14C4-4610-A406-801904A109B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DEC9DEEE-14C4-4610-A406-801904A109B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DEC9DEEE-14C4-4610-A406-801904A109B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFD28D97-C6C8-4F48-B327-51776C07AEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFD28D97-C6C8-4F48-B327-51776C07AEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFD28D97-C6C8-4F48-B327-51776C07AEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFD28D97-C6C8-4F48-B327-51776C07AEBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
