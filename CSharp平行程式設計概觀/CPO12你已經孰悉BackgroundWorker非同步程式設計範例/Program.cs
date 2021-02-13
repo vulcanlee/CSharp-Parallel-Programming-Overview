@@ -18,7 +18,7 @@ namespace CPO12你已經孰悉BackgroundWorker非同步程式設計範例
         static void Main(string[] args)
         {
             // 請根據本身電腦，調整成為適當的大小
-            int lastNumber = 20000000;
+            int lastNumber = 50000000;
             #region 計算切割成為 n 個資料區塊的開始與結束數值
             int partition = 4;
             int part = lastNumber / partition;
@@ -42,10 +42,10 @@ namespace CPO12你已經孰悉BackgroundWorker非同步程式設計範例
 
             #region 找出所有的質數
             ConcurrentBag<List<int>> allPrimes = new ConcurrentBag<List<int>>();
+            Console.WriteLine($"Thread Id : {Thread.CurrentThread.ManagedThreadId}");
             for (int i = 0; i < partition; i++)
             {
                 int idx = i;
-                Console.WriteLine($"Thread Id : {Thread.CurrentThread.ManagedThreadId}");
                 allBackgroundWorkers[idx].DoWork += ((s, e) =>
                 {
                     Console.WriteLine($"DoWork Thread Id : {Thread.CurrentThread.ManagedThreadId}");

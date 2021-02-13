@@ -18,7 +18,7 @@ namespace CPO03切割成為多區塊的平行Parallelism非同步Ansynchronous�
         static void Main(string[] args)
         {
             // 請根據本身電腦，調整成為適當的大小
-            int lastNumber = 20000000;
+            int lastNumber = 50000000;
             #region 計算切割成為 n 個資料區塊的開始與結束數值
             int partition = 4;
             int part = lastNumber / partition;
