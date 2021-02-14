@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading;
 
 namespace CPO02切割成為多區塊的同步Synchronous程式設計範例
 {
@@ -55,7 +56,12 @@ namespace CPO02切割成為多區塊的同步Synchronous程式設計範例
                 allPrimes3.Count + allPrimes4.Count,
                 stopwatch.ElapsedMilliseconds);
         }
-
+        #region 顯示執行緒資訊
+        static void ShowThread(string message)
+        {
+            Console.WriteLine($"{message} , Id={Thread.CurrentThread.ManagedThreadId}");
+        }
+        #endregion
         #region 找出兩數值間的所有質數
         static List<int> ComputeAllPrimeNumbers(int min, int max)
         {

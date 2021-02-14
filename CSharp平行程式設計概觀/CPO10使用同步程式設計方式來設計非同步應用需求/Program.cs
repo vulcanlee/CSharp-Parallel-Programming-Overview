@@ -25,5 +25,11 @@ namespace CPO10使用同步程式設計方式來設計非同步應用需求
             Console.WriteLine("Press any key for continuing...");
             Console.ReadKey();
         }
+        #region 顯示執行緒資訊
+        static void ShowThread(string message)
+        {
+            Console.WriteLine($"{message} , Id={Thread.CurrentThread.ManagedThreadId}");
+        }
+        #endregion
     }
 }

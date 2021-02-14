@@ -33,6 +33,12 @@ namespace CPO15用委派以非同步的方式呼叫同步方法
             myMethodHandle.EndInvoke(result1);
             myMethodHandle.EndInvoke(result2);
         }
+        #region 顯示執行緒資訊
+        static void ShowThread(string message)
+        {
+            Console.WriteLine($"{message} , Id={Thread.CurrentThread.ManagedThreadId}");
+        }
+        #endregion
         static void MyMethod(string action, int sleep)
         {
             for (int i = 0; i < 5; i++)

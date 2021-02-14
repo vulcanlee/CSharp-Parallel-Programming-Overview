@@ -3,6 +3,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading;
 
 namespace CPO14使用平行查詢程式設計範例
 {
@@ -50,6 +51,12 @@ namespace CPO14使用平行查詢程式設計範例
             Console.WriteLine("Primes : {0}\nTime: {1}",
                 allPrimes.Sum(x => x.Count()), stopwatch.ElapsedMilliseconds);
         }
+        #region 顯示執行緒資訊
+        static void ShowThread(string message)
+        {
+            Console.WriteLine($"{message} , Id={Thread.CurrentThread.ManagedThreadId}");
+        }
+        #endregion
 
         #region 找出兩數值間的所有質數
         static List<int> ComputeAllPrimeNumbers(int min, int max)

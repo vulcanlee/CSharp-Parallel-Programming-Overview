@@ -33,6 +33,12 @@ namespace CPO11你已經孰悉Timer非同步程式設計範例
             Console.WriteLine($"");
             Console.WriteLine($"");
         }
+        #region 顯示執行緒資訊
+        static void ShowThread(string message)
+        {
+            Console.WriteLine($"{message} , Id={Thread.CurrentThread.ManagedThreadId}");
+        }
+        #endregion
 
         private static void Timer_Elapsed(object sender, ElapsedEventArgs e)
         {

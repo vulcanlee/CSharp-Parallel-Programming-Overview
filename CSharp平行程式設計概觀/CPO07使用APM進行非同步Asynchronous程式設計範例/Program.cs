@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net;
 using System.Text;
+using System.Threading;
 
 namespace CPO07使用APM進行非同步Asynchronous程式設計範例
 {
@@ -37,6 +38,12 @@ namespace CPO07使用APM進行非同步Asynchronous程式設計範例
             Console.WriteLine("Press any key for continuing...");
             Console.ReadKey();
         }
+        #region 顯示執行緒資訊
+        static void ShowThread(string message)
+        {
+            Console.WriteLine($"{message} , Id={Thread.CurrentThread.ManagedThreadId}");
+        }
+        #endregion
 
         private static void ResponseCallback(IAsyncResult ar)
         {
