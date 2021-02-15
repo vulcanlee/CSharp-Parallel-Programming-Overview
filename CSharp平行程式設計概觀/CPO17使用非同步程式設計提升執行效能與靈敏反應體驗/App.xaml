@@ -1,0 +1,9 @@
+﻿<Application x:Class="CPO17使用非同步程式設計提升執行效能與靈敏反應體驗.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CPO17使用非同步程式設計提升執行效能與靈敏反應體驗"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

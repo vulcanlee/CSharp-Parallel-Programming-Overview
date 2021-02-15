@@ -1,0 +1,112 @@
+﻿<Window x:Class="CPO17使用非同步程式設計提升執行效能與靈敏反應體驗.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CPO17使用非同步程式設計提升執行效能與靈敏反應體驗"
+        mc:Ignorable="d"
+        Title="使用非同步程式設計提升執行效能與靈敏反應體驗"
+        Height="450" Width="700">
+    <Grid>
+        <Viewbox>
+            <Grid
+                Width="1920" Height="1080">
+                <StackPanel>
+                    <Grid>
+                        <Rectangle Fill="LightPink"/>
+                        <TextBlock Text="非同步設計提升執行效能 Performance與改善靈敏反應 Responsive"
+                               HorizontalAlignment="Center"
+                               FontSize="60"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="600" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Button Content="同步執行" x:Name="同步執行"
+                                Grid.Row="0" Grid.Column="0"
+                                HorizontalAlignment="Stretch"
+                                FontSize="60" Click="同步執行_Click"
+                                />
+                        <Rectangle Fill="LightGreen"
+                                   Grid.Row="0" Grid.Column="1"/>
+                        <TextBlock Text="使用同步程式設計方式，不過執行效率很差，執行時間過久"
+                                   Grid.Row="0" Grid.Column="1"
+                                   Margin="10,5"
+                                   HorizontalAlignment="Left"
+                                   TextWrapping="Wrap"
+                                   FontSize="60"/>
+                        <Button Content="非同步執行(會凍結)" x:Name="非同步執行會凍結"
+                                Grid.Row="1" Grid.Column="0"
+                                HorizontalAlignment="Stretch"
+                                FontSize="60" Click="非同步執行會凍結_Click"
+                                />
+                        <Rectangle Fill="LightBlue"
+                                   Grid.Row="1" Grid.Column="1"/>
+                        <TextBlock Text="使用非同步程式設計方式，執行效率大幅提升，不過會造成螢幕凍結"
+                                   Grid.Row="1" Grid.Column="1"
+                                   Margin="10,5"
+                                   HorizontalAlignment="Left"
+                                   TextWrapping="Wrap"
+                                   FontSize="60"/>
+                        <Button Content="非同步執行(有例外)" x:Name="非同步執行有例外"
+                                Grid.Row="2" Grid.Column="0"
+                                HorizontalAlignment="Stretch"
+                                FontSize="60" Click="非同步執行有例外_Click"
+                                />
+                        <Rectangle Fill="LightGreen"
+                                   Grid.Row="2" Grid.Column="1"/>
+                        <TextBlock Text="使用非同步程式設計方式，不使用封鎖 Block 方式來等待結果，但會有例外異常"
+                                   Grid.Row="2" Grid.Column="1"
+                                   Margin="10,5"
+                                   HorizontalAlignment="Left"
+                                   TextWrapping="Wrap"
+                                   FontSize="60"/>
+                        <Button Content="非同步執行" x:Name="非同步執行"
+                                Grid.Row="3" Grid.Column="0"
+                                HorizontalAlignment="Stretch"
+                                FontSize="60" Click="非同步執行_Click"
+                                />
+                        <Rectangle Fill="LightBlue"
+                                   Grid.Row="3" Grid.Column="1"/>
+                        <TextBlock Text="使用非同步程式設計方式，執行效率大幅提升"
+                                   Grid.Row="3" Grid.Column="1"
+                                   Margin="10,5"
+                                   HorizontalAlignment="Left"
+                                   TextWrapping="Wrap"
+                                   FontSize="60"/>
+                    </Grid>
+                    <Grid Margin="0,50,0,0">
+                        <Rectangle Fill="LightSalmon"/>
+                        <TextBlock Text="執行狀態"
+                               HorizontalAlignment="Center"
+                               FontSize="60"/>
+                    </Grid>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <ProgressBar  x:Name="ProgressBar"
+                            Grid.Row="0" Grid.Column="0"
+                            IsIndeterminate="false"
+                            HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"/>
+                        <TextBlock Text="執行結果"  x:Name="執行結果"
+                                   Grid.Row="0" Grid.Column="1"
+                                   Margin="10,5"
+                                   HorizontalAlignment="Left" VerticalAlignment="Center"
+                                   TextWrapping="Wrap"
+                                   FontSize="40"/>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Viewbox>
+    </Grid>
+</Window>
