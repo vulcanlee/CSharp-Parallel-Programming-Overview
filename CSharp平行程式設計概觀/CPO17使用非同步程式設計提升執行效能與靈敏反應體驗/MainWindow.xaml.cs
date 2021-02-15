@@ -16,7 +16,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CPO17使用非同步程式設計提升執行效能與靈敏反應體驗
+namespace CPO17使用非同步程式設計提升執行效能與流暢反應體驗
 {
     /// <summary>
     /// MainWindow.xaml 的互動邏輯
