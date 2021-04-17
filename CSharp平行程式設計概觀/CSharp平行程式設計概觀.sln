@@ -37,7 +37,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO16用委派以非同步�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO17使用非同步程式設計提升執行效能與流暢反應體驗", "CPO17使用非同步程式設計提升執行效能與靈敏反應體驗\CPO17使用非同步程式設計提升執行效能與流暢反應體驗.csproj", "{E430129E-2E31-4247-A62F-177476C9FEC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO18使用執行緒區域資料做資料平行處理程式設計範例", "CPO18使用資料平行處理與同步程式設計範例\CPO18使用執行緒區域資料做資料平行處理程式設計範例.csproj", "{B6F38D0F-949E-450F-9572-BE3C95C89941}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CPO18使用執行緒區域資料做資料平行處理程式設計範例", "CPO18使用資料平行處理與同步程式設計範例\CPO18使用執行緒區域資料做資料平行處理程式設計範例.csproj", "{B6F38D0F-949E-450F-9572-BE3C95C89941}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPO19NET Core 不支援委派使用 BeginInvoke 與 EndInvoke", "CPO19NET Core 不支援委派使用 BeginInvoke 與 EndInvoke\CPO19NET Core 不支援委派使用 BeginInvoke 與 EndInvoke.csproj", "{D2EBDFA9-9BA9-4DA2-AFF5-6BDAA3BE6A26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +119,10 @@ Global
 		{B6F38D0F-949E-450F-9572-BE3C95C89941}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6F38D0F-949E-450F-9572-BE3C95C89941}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6F38D0F-949E-450F-9572-BE3C95C89941}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2EBDFA9-9BA9-4DA2-AFF5-6BDAA3BE6A26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2EBDFA9-9BA9-4DA2-AFF5-6BDAA3BE6A26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2EBDFA9-9BA9-4DA2-AFF5-6BDAA3BE6A26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2EBDFA9-9BA9-4DA2-AFF5-6BDAA3BE6A26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>CPO19NET_Core_不支援委派使用_BeginInvoke_與_EndInvoke</RootNamespace>
+  </PropertyGroup>
+
+</Project>
