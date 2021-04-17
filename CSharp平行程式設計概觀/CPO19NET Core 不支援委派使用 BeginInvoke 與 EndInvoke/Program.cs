@@ -3,6 +3,9 @@ using System.Threading;
 
 namespace CPO19NET_Core_不支援委派使用_BeginInvoke_與_EndInvoke
 {
+    /// <summary>
+    /// .NET Core 不支援委派使用 BeginInvoke 與 EndInvoke 
+    /// </summary>
     class Program
     {
         delegate void MyMethodDel(string action, int sleep);
