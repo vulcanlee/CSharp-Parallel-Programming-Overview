@@ -16,8 +16,8 @@ namespace CPO01同步Synchronous程式設計範例
         static void Main(string[] args)
         {
             //// 指定僅使用單一邏輯處理核心來執行
-            //Process.GetCurrentProcess().ProcessorAffinity =
-            //    (IntPtr)0b0010_0000;
+            Process.GetCurrentProcess().ProcessorAffinity =
+                (IntPtr)0b0001_0000;
             // 請根據本身電腦，調整成為適當的大小
             int lastNumber = 50000000;
             Stopwatch stopwatch = new Stopwatch();
